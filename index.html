@@ -6,12 +6,41 @@
     <title>New Year Resolutions</title>
 </head>
 <body>
-    <h1>Welcome to the New You of the New Year!</h1>
-    <p>
-        Every new year is a milestone, filled with new beginnings for many individuals. 
-        Setting new year resolutions means opening the doors to a year full of growth and change. 
-        Write down your goals, and check them after 1 year; don't worry, we'll keep them safe for you, 
-        and you can review them in the next year.
-    </p>
+    <div id="container">
+        <h1>Welcome to the New You of the New Year!</h1>
+        <p id="introduction">
+            Every new year is a milestone, filled with new beginnings for many individuals. 
+            Setting new year resolutions means opening the doors to a year full of growth and change. 
+            Write down your goals, and check them after 1 year; don't worry, we'll keep them safe for you, 
+            and you can review them in the next year.
+        </p>
+        <div id="goalSettingArea">
+            <h2>Set Your Goals</h2>
+            <p>You can see and organize ypur goals before lock them. After you lock them you can see them.</p>
+            <input type="text" name="newGoal" id="newGoal">
+            <button id="addBtn">Add</button>
+            <div id="goals">
+                <ul id="goalsList"></ul>
+        </div>
+        <button id="lockBtn">Lock Your Resolutions</button>
+        </div>
+    </div>
+
+    <div id="reviewArea">
+        <p>
+            Congratulations, you have set your goals for the new year. 
+            We will keep them safe for you until the next year. It is up to you to achieve them. 
+        </p>
+        <p>Tomorrow is a reflection of the steps we take today.</p>
+        <div id="displayArea">
+            
+        </div>
+
+    </div>
+    
+
+    
+    <script src="script.js"></script>
+
 </body>
 </html>
