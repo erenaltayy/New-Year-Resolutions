@@ -6,14 +6,18 @@ const container = document.getElementById("container");
 const reviewArea = document.getElementById("reviewArea");
 const displayArea = document.getElementById("displayArea");
 
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
+const p3 = document.getElementById("p3");
+
 window.addEventListener("load", ()=>{
     if(localStorage.getItem("isLocked") === "true"){
-        container.style.display = "none";
-        reviewArea.style.display = "block";
+        p1.style.display = "none";
+        p2.style.display = "none";
         showGoals();
     }
     else{
-        reviewArea.style.display = "none";
+        p3.style.display = "none";
     }
 })
 

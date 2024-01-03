@@ -4,43 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Year Resolutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="p1">
     <div id="container">
-        <h1>Welcome to the New You of the New Year!</h1>
-        <p id="introduction">
-            Every new year is a milestone, filled with new beginnings for many individuals. 
-            Setting new year resolutions means opening the doors to a year full of growth and change. 
-            Write down your goals, and check them after 1 year; don't worry, we'll keep them safe for you, 
-            and you can review them in the next year.
-        </p>
-        <div id="goalSettingArea">
-            <h2>Set Your Goals</h2>
-            <p>You can see and organize ypur goals before lock them. After you lock them you can see them.</p>
-            <input type="text" name="newGoal" id="newGoal">
-            <button id="addBtn">Add</button>
-            <div id="goals">
-                <ul id="goalsList"></ul>
+        <div id="p1_leftArea">
+            <h1>Welcome to the New You of the New Year!</h1>
+            <p id="introduction">
+                Every new year is a milestone, filled with new beginnings for many individuals. 
+                Setting new year resolutions means opening the doors to a year full of growth and change. 
+                Write down your goals, and check them after 1 year; don't worry, we'll keep them safe for you, 
+                and you can review them in the next year.
+            </p>
         </div>
-        <button id="lockBtn">Lock Your Resolutions</button>
+        <div id="p1_rightArea">
+            <img src="index.svg" id="index-img">
         </div>
     </div>
 
+</section>
+
+<section id="p2">
+    <div id="goalSettingArea">
+        <div id="p2_leftArea">
+            <img src="section2.svg" id="img-section2">
+        </div>
+        <div id="p2_rightArea">
+            <h2>Set Your Goals</h2>
+            <p>You can see and organize your goals before lock them. After you lock them you can see them.</p>
+            <input type="text" name="newGoal" id="newGoal">
+            <button id="addBtn">Add</button>
+            <button id="lockBtn">Lock Your Resolutions</button>
+            <div id="goals">
+                <ul id="goalsList"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="p3">
     <div id="reviewArea">
         <p>
             Congratulations, you have set your goals for the new year. 
             We will keep them safe for you until the next year. It is up to you to achieve them. 
         </p>
         <p>Tomorrow is a reflection of the steps we take today.</p>
-        <div id="displayArea">
-            
+        <div id="displayArea">   
         </div>
-
     </div>
-    
+</section>
 
-    
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

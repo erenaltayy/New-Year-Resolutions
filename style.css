@@ -1,0 +1,61 @@
+body {
+    background-color: #FFDAB9;
+    text-align: center;
+    
+}
+
+section { 
+    height: 100vh;
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#p1_leftArea {
+    width: 55%; 
+}
+
+#p1_rightArea {
+    width: 45%; 
+    display: flex; 
+    justify-content: flex-end;
+}
+
+#index-img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+#goalSettingArea{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+#p2_leftArea{
+    width: 40%;
+    display: flex;
+}
+
+#p2_rightArea{
+    width: 60%;
+}
+
+#goals{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+
+
+
