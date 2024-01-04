@@ -36,12 +36,14 @@ lockBtn.addEventListener("click", ()=>{
     container.style.display = "none";
     reviewArea.style.display = "block";
     showGoals();
+    location.reload();
 
 })
 
 function showGoals(){
     const ul = document.createElement("ul");
     displayArea.appendChild(ul);
+    ul.textContent = "Your goals for the New Year"
 
     const goals = Object.keys(localStorage);
     goals.forEach((goal) => {

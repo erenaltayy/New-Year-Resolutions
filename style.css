@@ -1,6 +1,7 @@
 body {
     background-color: #FFDAB9;
     text-align: center;
+    font-size: 35px;
     
 }
 
@@ -13,7 +14,7 @@ ul{
     list-style-type: none;
 }
 
-#container {
+#container , #reviewArea{
     display: flex;
     width: 100%;
     justify-content: space-between; 
@@ -41,12 +42,12 @@ ul{
     justify-content: space-between; 
     align-items: center; 
 }
-#p2_leftArea{
+#p2_leftArea, #p3_rightArea{
     width: 40%;
     display: flex;
 }
 
-#p2_rightArea{
+#p2_rightArea, #p3_leftArea{
     width: 60%;
 }
 
@@ -56,6 +57,39 @@ ul{
 }
 
 
+#index-img {
+    opacity: 0;
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;
+    animation-delay: 0s;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animator-hidden {
+    display: none;
+}
+
+#index-img2 {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    height: 30px;
+}
+
+button{
+    height: 30px;
+}
 
 
 
